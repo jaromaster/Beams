@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beam Deformation</title>
+    <h1>Beam Deformation</h1>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canv" width="800" height="600"></canvas>
+    <script src="code.js"></script>
+    <input type="range" id="forceSlider" min="0" max="10000" value="0" step="1">
+    <p>Force: <span id="forceText">0</span> N</p>
+</body>
+</html>
